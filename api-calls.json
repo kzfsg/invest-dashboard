@@ -1,0 +1,261 @@
+[
+  {
+    "url": "https://en.macromicro.me/charts/45866/global-citi-surprise-index",
+    "method": "GET",
+    "headers": {
+      "accept-language": "en-US,en;q=0.9",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/assets/js/highcharts/11.4.6/highstock.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/assets/js/highcharts/11.4.6/modules-drag-panes.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/assets/js/highcharts/11.4.6/highcharts-more.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://en.macromicro.me/assets/js/chart/drawer_bundle.js?v=250603.1040",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/charts/45866/global-citi-surprise-index",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*",
+      "cookie": "PHPSESSID=hsmo3p4b4in5lsljil4tf5ne51"
+    }
+  },
+  {
+    "url": "https://en.macromicro.me/assets/js/chartcollection/chartcollection_bundle.js?v=250603.1040",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/charts/45866/global-citi-surprise-index",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*",
+      "cookie": "PHPSESSID=hsmo3p4b4in5lsljil4tf5ne51"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/assets/img/ui/wall-chart-1035x540.png",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/cdn-cgi/image/width=600,quality=50/files/charts/465/100465-en.png?v=1713895929",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/cdn-cgi/image/width=600,quality=50/files/charts/757/55757-en.png?v=1748551370",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/cdn-cgi/image/width=600,quality=50/files/charts/744/55744-en.png?v=1747601321",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://cdn.macromicro.me/cdn-cgi/image/width=600,quality=50/files/charts/758/55758-en.png?v=1748119551",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://en.macromicro.me/api/view/chart/45866",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "Bearer 5e2bf48df298f990a773fec2a2897283",
+      "referer": "https://en.macromicro.me/charts/45866/global-citi-surprise-index",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "docref": "",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "accept": "*/*",
+      "cookie": "PHPSESSID=hsmo3p4b4in5lsljil4tf5ne51; aiExplainOn=off"
+    }
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4CS94JJY2M&gtm=45je5641h1v877854312za200&_p=1749453348277&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104611821~104653070~104653072~104661466~104661468~104698127~104698129&cid=1477728186.1749453349&ul=en-us&sr=1639x1024&uaa=x86&uab=64&uafvl=Chromium%3B137.0.7151.55%7CNot%252FA)Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&are=1&frm=0&pscdl=&_s=1&sid=1749453348&sct=1&seg=0&dl=https%3A%2F%2Fen.macromicro.me%2Fcharts%2F45866%2Fglobal-citi-surprise-index&dt=World%20-%20Citi%20Surprise%20Index%20%7C%20MacroMicro&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&up.sub_level=NONE&up.ui_lang=en&tfd=1316",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://tr.line.me/tag.gif?b_id=0708b562-7733-4c54-a180-9d302c9a1535&b_u=https%3A%2F%2Fen.macromicro.me%2Fcharts%2F45866%2Fglobal-citi-surprise-index&b_d=en.macromicro.me&b_p=%2Fcharts%2F45866%2Fglobal-citi-surprise-index&b_t=World%20-%20Citi%20Surprise%20Index%20%7C%20MacroMicro&c_t=lap&t_id=e9b68471-06b0-41b6-b7ec-da42a6d18f2d&s_id=1fa0d09e-1e12027e&x4=100&e=pv&v=3.5.0&_t=1749453348942",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://en.macromicro.me/charts/data/45866",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "Bearer 5e2bf48df298f990a773fec2a2897283",
+      "referer": "https://en.macromicro.me/charts/45866/global-citi-surprise-index",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "docref": "",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "content-type": "application/json",
+      "accept": "*/*",
+      "cookie": "PHPSESSID=hsmo3p4b4in5lsljil4tf5ne51; aiExplainOn=off; app_ui_support_btn=1; mm_sess_pages=1; _ga_4CS94JJY2M=GS2.1.s1749453348$o1$g0$t1749453348$j60$l0$h0; _ga=GA1.1.1477728186.1749453349; __lt__cid=0708b562-7733-4c54-a180-9d302c9a1535; __lt__sid=1fa0d09e-1e12027e; _hjSessionUser_1543609=eyJpZCI6ImY3NmVhODcxLTNlZDItNTcyZi05NjdkLWYwYzJlYzA4Nzg3NSIsImNyZWF0ZWQiOjE3NDk0NTMzNDkxMTksImV4aXN0aW5nIjpmYWxzZX0=; _hjSession_1543609=eyJpZCI6ImYxYmQ4Y2YxLTUzZTMtNDE0OS1hMzA1LWJkZjQ1ZDM4YjIxMyIsImMiOjE3NDk0NTMzNDkxMjEsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0="
+    },
+    "postData": "{\"ignoredCharts\":[],\"limitedCharts\":[45866]}"
+  },
+  {
+    "url": "https://www.facebook.com/tr/?id=655276553649162&ev=PageView&dl=https%3A%2F%2Fen.macromicro.me%2Fcharts%2F45866%2Fglobal-citi-surprise-index&rl=&if=false&ts=1749453349776&sw=1639&sh=1024&v=2.9.205&r=stable&ec=0&o=4126&fbp=fb.1.1749453349772.994114250541596882&eid=ob3_plugin-set_3c455ceecf60090a60f4d89af1416469bd32e591d659496c4ccfed708500b2ab&ler=empty&it=1749453348929&coo=false&cdl=&exp=k2&rqm=GET",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://www.facebook.com/privacy_sandbox/pixel/register/trigger/?id=655276553649162&ev=PageView&dl=https%3A%2F%2Fen.macromicro.me%2Fcharts%2F45866%2Fglobal-citi-surprise-index&rl=&if=false&ts=1749453349776&sw=1639&sh=1024&v=2.9.205&r=stable&ec=0&o=4126&fbp=fb.1.1749453349772.994114250541596882&eid=ob3_plugin-set_3c455ceecf60090a60f4d89af1416469bd32e591d659496c4ccfed708500b2ab&ler=empty&it=1749453348929&coo=false&cdl=&exp=k2&rqm=FGET",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "url": "https://en.macromicro.me/api/keepalive",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/charts/45866/global-citi-surprise-index",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "accept": "application/json, text/javascript, */*; q=0.01",
+      "cookie": "PHPSESSID=hsmo3p4b4in5lsljil4tf5ne51; aiExplainOn=off; app_ui_support_btn=1; mm_sess_pages=1; _ga_4CS94JJY2M=GS2.1.s1749453348$o1$g0$t1749453348$j60$l0$h0; _ga=GA1.1.1477728186.1749453349; __lt__cid=0708b562-7733-4c54-a180-9d302c9a1535; __lt__sid=1fa0d09e-1e12027e; _hjSessionUser_1543609=eyJpZCI6ImY3NmVhODcxLTNlZDItNTcyZi05NjdkLWYwYzJlYzA4Nzg3NSIsImNyZWF0ZWQiOjE3NDk0NTMzNDkxMTksImV4aXN0aW5nIjpmYWxzZX0=; _hjSession_1543609=eyJpZCI6ImYxYmQ4Y2YxLTUzZTMtNDE0OS1hMzA1LWJkZjQ1ZDM4YjIxMyIsImMiOjE3NDk0NTMzNDkxMjEsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=; _fbp=fb.1.1749453349772.994114250541596882"
+    }
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4CS94JJY2M&gtm=45je5641h1v877854312za200&_p=1749453348277&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104611821~104653070~104653072~104661466~104661468~104698127~104698129&cid=1477728186.1749453349&ul=en-us&sr=1639x1024&uaa=x86&uab=64&uafvl=Chromium%3B137.0.7151.55%7CNot%252FA)Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&are=1&frm=0&pscdl=&_eu=AAAAAAQ&_s=2&sid=1749453348&sct=1&seg=0&dl=https%3A%2F%2Fen.macromicro.me%2Fcharts%2F45866%2Fglobal-citi-surprise-index&dt=World%20-%20Citi%20Surprise%20Index%20%7C%20MacroMicro&en=popup_display&_ee=1&ep.Campaign=wefc0602&ep.AdID=791&_et=6107&tfd=16266",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://en.macromicro.me/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  }
+]
