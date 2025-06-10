@@ -2,18 +2,24 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Silk from './components/Silk';
 import Aurora from './components/Aurora';
+import AnimationOverlay from './components/AnimationOverlay';
 
 function App() {
   const [background, setBackground] = useState<'silk' | 'aurora'>('silk');
   const [isMounted, setIsMounted] = useState(false);
-
-  // Add a small delay to ensure the components are properly mounted
+  const [showAnimation, setShowAnimation] = useState(true);
+  
+  // Start with the content hidden until the animation completes
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsMounted(true);
-    }, 100);
-    return () => clearTimeout(timer);
+    // This effect is intentionally empty, just to ensure the initial state is correct
   }, []);
+
+  // Handle animation completion
+  const handleAnimationComplete = () => {
+    setShowAnimation(false);
+    // Small delay before showing the main content
+    setTimeout(() => setIsMounted(true), 500);
+  };
 
   const toggleBackground = () => {
     setBackground(prev => prev === 'silk' ? 'aurora' : 'silk');
@@ -21,6 +27,9 @@ function App() {
 
   return (
     <div className="app">
+      {showAnimation && (
+        <AnimationOverlay onComplete={handleAnimationComplete} />
+      )}
       {isMounted && (
         <>
           {background === 'silk' ? (

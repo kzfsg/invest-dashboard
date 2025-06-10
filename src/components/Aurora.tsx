@@ -113,17 +113,19 @@ interface AuroraProps {
   amplitude?: number;
   blend?: number;
   speed?: number;
+  fadeIn?: boolean;
 }
 
 const Aurora: React.FC<AuroraProps> = ({
   colorStops = ["#3A29FF", "#FF94B4", "#FF3232"],
   amplitude = 1.0,
   blend = 0.5,
-  speed = 0.5
+  speed = 0.5,
+  fadeIn = true
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const propsRef = useRef({ colorStops, amplitude, blend, speed });
-  propsRef.current = { colorStops, amplitude, blend, speed };
+  const propsRef = useRef({ colorStops, amplitude, blend, speed, fadeIn });
+  propsRef.current = { colorStops, amplitude, blend, speed, fadeIn };
 
   useEffect(() => {
     const container = containerRef.current;
@@ -146,6 +148,7 @@ const Aurora: React.FC<AuroraProps> = ({
     gl.canvas.style.width = '100%';
     gl.canvas.style.height = '100%';
     gl.canvas.style.zIndex = '-1';
+    // Remove direct opacity and transition styles since we're using CSS classes
 
     let program: any;
 
@@ -184,6 +187,11 @@ const Aurora: React.FC<AuroraProps> = ({
 
     const mesh = new Mesh(gl, { geometry, program });
     container.appendChild(gl.canvas);
+    
+    // Add visible class after mount to trigger fade in
+    if (fadeIn && container) {
+      container.classList.add('visible');
+    }
 
     let animateId = 0;
     let startTime = Date.now();
@@ -219,7 +227,7 @@ const Aurora: React.FC<AuroraProps> = ({
     };
   }, [colorStops, amplitude, blend, speed]);
 
-  return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }} />;
+  return <div ref={containerRef} className="aurora-container" style={{ zIndex: -1 }} />;
 };
 
 export default Aurora;

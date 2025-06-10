@@ -1,5 +1,5 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { forwardRef, useRef, useMemo, useLayoutEffect } from "react";
+import { forwardRef, useRef, useMemo, useLayoutEffect, useEffect } from "react";
 import * as THREE from 'three';
 import { Color } from "three";
 
@@ -100,7 +100,10 @@ interface SilkProps {
   color?: string;
   noiseIntensity?: number;
   rotation?: number;
+  fadeIn?: boolean;
 }
+
+import "./Silk.css";
 
 const Silk: React.FC<SilkProps> = ({
   speed = 5,
@@ -108,7 +111,18 @@ const Silk: React.FC<SilkProps> = ({
   color = "#7B7481",
   noiseIntensity = 1.5,
   rotation = 0,
+  fadeIn = true,
 }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (fadeIn && containerRef.current) {
+      const timer = setTimeout(() => {
+        containerRef.current?.classList.add('visible');
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [fadeIn]);
   const meshRef = useRef<THREE.Mesh>(null);
 
   const uniforms = useMemo(
@@ -124,7 +138,11 @@ const Silk: React.FC<SilkProps> = ({
   );
 
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
+    <div 
+      ref={containerRef}
+      className="silk-container"
+      style={{ zIndex: -1 }}
+    >
       <Canvas dpr={[1, 2]} frameloop="always">
         <SilkPlane ref={meshRef} uniforms={uniforms} />
       </Canvas>

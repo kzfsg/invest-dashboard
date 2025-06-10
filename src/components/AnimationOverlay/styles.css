@@ -1,0 +1,32 @@
+.animation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.animation-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.welcome-text {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #fff;
+  opacity: 1;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
