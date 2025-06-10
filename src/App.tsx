@@ -25,7 +25,7 @@ function App() {
         <>
           {background === 'silk' ? (
             <Silk 
-              speed={5}
+              speed={8}
               scale={1}
               color="#7B7481"
               noiseIntensity={1.5}
@@ -36,19 +36,19 @@ function App() {
               colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
               blend={0.5}
               amplitude={1.0}
-              speed={0.5}
+              speed={2}
             />
           )}
         </>
       )}
       
       <div className="content">
-        <h1>Background Toggle Demo</h1>
+        <h1>theDashboard</h1>
         <button 
           onClick={toggleBackground} 
           className="toggle-button"
         >
-          Switch to {background === 'silk' ? 'Aurora' : 'Silk'} Background
+          {background === 'silk' ? 'Aurora' : 'Silk'} Background
         </button>
       </div>
     </div>
