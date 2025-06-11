@@ -1,9 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
-import { FiMenu, FiX, FiUser, FiHome, FiInfo } from 'react-icons/fi';
+import { FiMenu, FiX, FiUser, FiHome, FiInfo, FiSun, FiMoon } from 'react-icons/fi';
 import { FaChevronDown } from 'react-icons/fa';
 import styles from './Navbar.module.css';
 
-const Navbar = () => {
+interface NavbarProps {
+  toggleBackground: () => void;
+  background: 'silk' | 'aurora';
+}
+
+const Navbar: React.FC<NavbarProps> = ({ toggleBackground, background }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -82,36 +87,33 @@ const Navbar = () => {
           <button 
             className={styles.navLink} 
             onClick={() => scrollToSection('about')}
-            aria-label="Learn more about us"
+            aria-label="Go to about"
           >
             <FiInfo className={styles.navIcon} />
             <span>About Us</span>
           </button>
 
-          {/* Profile Dropdown */}
-          <div className={styles.profileContainer}>
+          <div className={styles.navActions}>
             <button 
-              className={`${styles.profileButton} ${isProfileOpen ? styles.profileButtonActive : ''}`}
-              onClick={toggleProfileMenu}
-              aria-haspopup="true"
-              aria-expanded={isProfileOpen}
+              onClick={toggleBackground}
+              className={styles.themeToggle}
+              aria-label="Toggle theme"
             >
-              <div className={styles.avatar}>
-                <FiUser className={styles.userIcon} />
-              </div>
-              <span className={styles.profileName}>Account</span>
+              {background === 'silk' ? <FiSun /> : <FiMoon />}
+              <span>{background === 'silk' ? 'Aurora' : 'Silk'} Mode</span>
+            </button>
+            <button 
+              className={styles.profileButton} 
+              onClick={toggleProfileMenu}
+              aria-expanded={isProfileOpen}
+              aria-label="User profile"
+            >
+              <FiUser className={styles.userIcon} />
+              <span className={styles.profileName}>User</span>
               <FaChevronDown className={`${styles.dropdownIcon} ${isProfileOpen ? styles.rotate : ''}`} />
             </button>
-            
             {isProfileOpen && (
               <div className={styles.dropdownMenu}>
-                <button className={styles.dropdownItem}>
-                  <span>Profile</span>
-                </button>
-                <button className={styles.dropdownItem}>
-                  <span>Settings</span>
-                </button>
-                <div className={styles.divider}></div>
                 <button className={styles.dropdownItem}>
                   <span>Sign Out</span>
                 </button>

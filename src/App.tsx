@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Silk from './components/background/Silk';
@@ -52,17 +52,22 @@ function App() {
         </>
       )}
       
-      <Navbar />
+      <Navbar toggleBackground={toggleBackground} background={background} />
       <div className="content">
         <div className="logo-container">
           <img src="/assets/Statsboard.png" alt="Logo" className="main-logo" />
+          <div className="filter-buttons">
+            {['US', 'China', 'EU', 'EMs', 'Macro'].map((filter) => (
+              <button 
+                key={filter}
+                className="filter-button"
+                onClick={() => console.log(`Filter by ${filter}`)}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
         </div>
-        <button 
-          onClick={toggleBackground} 
-          className="toggle-button"
-        >
-          {background === 'silk' ? 'Aurora' : 'Silk'} Background
-        </button>
       </div>
     </div>
   );
