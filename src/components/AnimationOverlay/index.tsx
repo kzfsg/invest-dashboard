@@ -26,7 +26,9 @@ const AnimationOverlay = ({ onComplete }: AnimationOverlayProps) => {
 
   return (
     <div className={`animation-overlay ${fadeOut ? 'fade-out' : ''}`}>
-      <div className="welcome-text">theDashboard</div>
+      <div className="welcome-logo">
+        <img src="/assets/Statsboard.png" alt="Logo" className="overlay-logo" />
+      </div>
     </div>
   );
 };

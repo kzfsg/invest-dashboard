@@ -54,7 +54,9 @@ function App() {
       
       <Navbar />
       <div className="content">
-        <h1>theDashboard</h1>
+        <div className="logo-container">
+          <img src="/assets/Statsboard.png" alt="Logo" className="main-logo" />
+        </div>
         <button 
           onClick={toggleBackground} 
           className="toggle-button"
