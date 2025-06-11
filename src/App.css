@@ -31,7 +31,7 @@ html, body, #root {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
   width: 90%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   max-height: 80vh; /* Maximum height of 80% of viewport height */
   margin: 2rem auto;
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
