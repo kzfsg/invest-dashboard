@@ -55,6 +55,7 @@ const Navbar = () => {
       <div className={styles.navbarContainer}>
         {/* Logo */}
         <div className={styles.logo} onClick={() => scrollToSection('home')}>
+          <img src="/assets/Statsboard.png" alt="Logo" className={styles.logoImage} />
           <span>theDashboard</span>
         </div>
 

@@ -27,19 +27,25 @@
 
 /* Logo */
 .logo {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.logoImage {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* Navigation Links */
