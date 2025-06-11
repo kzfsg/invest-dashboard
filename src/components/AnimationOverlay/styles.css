@@ -11,6 +11,9 @@
   z-index: 1000;
   opacity: 1;
   transition: opacity 1s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .animation-overlay.fade-out {
@@ -19,11 +22,15 @@
 }
 
 .welcome-text {
-  font-size: 6rem;
+  font-size: clamp(2.5rem, 10vw, 6rem);
   font-weight: 900;
   color: #fff;
   opacity: 1;
   animation: fadeIn 1s ease-out;
+  text-align: center;
+  padding: 0 1rem;
+  word-break: break-word;
+  line-height: 1.2;
 }
 
 @keyframes fadeIn {

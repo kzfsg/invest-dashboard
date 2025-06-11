@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Silk from './components/Silk';
-import Aurora from './components/Aurora';
+import Silk from './components/background/Silk';
+import Aurora from './components/background/Aurora';
 import AnimationOverlay from './components/AnimationOverlay';
 
 function App() {
