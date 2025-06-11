@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
 import Silk from './components/background/Silk';
 import Aurora from './components/background/Aurora';
@@ -51,6 +52,7 @@ function App() {
         </>
       )}
       
+      <Navbar />
       <div className="content">
         <h1>theDashboard</h1>
         <button 
