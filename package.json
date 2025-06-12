@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@react-three/fiber": "^9.1.2",
+    "@types/highcharts": "^5.0.44",
+    "highcharts": "^12.2.0",
+    "highcharts-react-official": "^3.2.2",
     "playwright": "^1.52.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
