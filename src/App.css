@@ -171,6 +171,36 @@ html, body, #root {
   padding: 1.5rem;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px; /* Fixed height for the card */
+  overflow: hidden; /* Ensures the content doesn't overflow the card */
+}
+
+.card-content {
+  flex: 1;
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding-right: 0.5rem; /* Prevents content from touching scrollbar */
+  margin-right: -0.5rem; /* Compensates for the padding */
+}
+
+/* Custom scrollbar for the card content */
+.card-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.card-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.card-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .card:hover {

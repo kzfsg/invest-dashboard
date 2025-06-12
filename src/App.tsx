@@ -88,16 +88,47 @@ function App() {
       </div>
       <div className="cards-container">
         <div className="card">
-          <h3>Card 1</h3>
-          <p>This is the first card with some content.</p>
+          <h3>NFCI Data Table</h3>
+          <div className="card-content">
+            <div style={{ width: '100%' }}>
+              <NFCIDataTable 
+                dataUrl="/screenshotScripts/nfci_html_extracts/chart_4_highcharts-data-table-1.html"
+                title="NFCI Data Table"
+                containerProps={{
+                  style: {
+                    width: '100%',
+                    margin: '0',
+                    padding: '0',
+                    boxSizing: 'border-box'
+                  }
+                }}
+              />
+            </div>
+          </div>
         </div>
         <div className="card">
           <h3>Card 2</h3>
-          <p>This is the second card with some content.</p>
+          <div className="card-content">
+            <p>This is the second card with some content.</p>
+            <p>Additional content to demonstrate scrolling...</p>
+            <p>More content...</p>
+            <p>Even more content...</p>
+            <p>Keep going...</p>
+            <p>Almost there...</p>
+            <p>Final content item.</p>
+          </div>
         </div>
         <div className="card">
           <h3>Card 3</h3>
-          <p>This is the third card with some content.</p>
+          <div className="card-content">
+            <p>This is the third card with some content.</p>
+            <p>Additional content to demonstrate scrolling...</p>
+            <p>More content...</p>
+            <p>Even more content...</p>
+            <p>Keep going...</p>
+            <p>Almost there...</p>
+            <p>Final content item.</p>
+          </div>
         </div>
       </div>
     </div>
