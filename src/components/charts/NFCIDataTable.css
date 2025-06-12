@@ -19,6 +19,32 @@
 /* Ensure all text in the table is black */
 .nfcidatatable-container,
 .nfcidatatable-container th,
+.nfcidatatable-container td,
+.nfcidatatable-container tr,
+.nfcidatatable-container table,
+.nfcidatatable-container thead,
+.nfcidatatable-container tbody,
+.nfcidatatable-container tfoot,
+.nfcidatatable-container caption,
+.nfcidatatable-container tr,
+.nfcidatatable-container th,
 .nfcidatatable-container td {
-  color: #000000;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+/* Make sure table headers are also black */
+.nfcidatatable-container th {
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+/* Ensure table text is always black */
+.nfcidatatable-container {
+  color: #000000 !important;
+}
+
+/* Target any potential nested elements */
+.nfcidatatable-container * {
+  color: inherit !important;
 }
