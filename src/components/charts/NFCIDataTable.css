@@ -1,0 +1,24 @@
+.table-row {
+  transition: background-color 0.2s ease;
+  color: #000000; /* Black text color */
+}
+
+.table-row.even {
+  background-color: #ffffff;
+}
+
+.table-row.odd {
+  background-color: #f9f9f9;
+}
+
+.table-row:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Ensure all text in the table is black */
+.nfcidatatable-container,
+.nfcidatatable-container th,
+.nfcidatatable-container td {
+  color: #000000;
+}

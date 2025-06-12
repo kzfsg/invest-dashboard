@@ -4,6 +4,7 @@ import './App.css';
 import Silk from './components/background/Silk';
 import Aurora from './components/background/Aurora';
 import AnimationOverlay from './components/AnimationOverlay';
+import NFCIDataTable from './components/charts/NFCIDataTable';
 
 function App() {
   const [background, setBackground] = useState<'silk' | 'aurora'>('silk');
@@ -66,6 +67,22 @@ function App() {
                 {filter}
               </button>
             ))}
+          </div>
+          
+          {/* NFCI Data Table */}
+          <div style={{ marginTop: '40px', width: '100%', maxWidth: '1200px', margin: '40px auto 0' }}>
+            <NFCIDataTable 
+              dataUrl="/screenshotScripts/nfci_html_extracts/chart_4_highcharts-data-table-1.html"
+              title="NFCI Data Table"
+              containerProps={{
+                style: {
+                  width: '100%',
+                  margin: '0 auto',
+                  padding: '0 20px',
+                  boxSizing: 'border-box'
+                }
+              }}
+            />
           </div>
         </div>
       </div>
