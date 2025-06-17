@@ -1,16 +1,16 @@
-import { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import './App.css';
-import Silk from './components/background/Silk';
-import Aurora from './components/background/Aurora';
-import AnimationOverlay from './components/AnimationOverlay';
-import NFCIDataTable from './components/charts/NFCIDataTable';
+import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import Silk from "./components/background/Silk";
+import Aurora from "./components/background/Aurora";
+import AnimationOverlay from "./components/AnimationOverlay";
+import NFCIDataTable from "./components/charts/NFCIDataTable";
 
 function App() {
-  const [background, setBackground] = useState<'silk' | 'aurora'>('silk');
+  const [background, setBackground] = useState<"silk" | "aurora">("silk");
   const [isMounted, setIsMounted] = useState(false);
   const [showAnimation, setShowAnimation] = useState(true);
-  
+
   // Start with the content hidden until the animation completes
   useEffect(() => {
     // This effect is intentionally empty, just to ensure the initial state is correct
@@ -24,7 +24,7 @@ function App() {
   };
 
   const toggleBackground = () => {
-    setBackground(prev => prev === 'silk' ? 'aurora' : 'silk');
+    setBackground((prev) => (prev === "silk" ? "aurora" : "silk"));
   };
 
   return (
@@ -34,8 +34,8 @@ function App() {
       )}
       {isMounted && (
         <>
-          {background === 'silk' ? (
-            <Silk 
+          {background === "silk" ? (
+            <Silk
               speed={8}
               scale={1}
               color="#7B7481"
@@ -52,14 +52,14 @@ function App() {
           )}
         </>
       )}
-      
+
       <Navbar toggleBackground={toggleBackground} background={background} />
       <div className="content">
         <div className="logo-container">
           <img src="/assets/Statsboard.png" alt="Logo" className="main-logo" />
           <div className="filter-buttons">
-            {['US', 'China', 'EU', 'EMs', 'Macro'].map((filter) => (
-              <button 
+            {["US", "China", "EU", "EMs", "Macro"].map((filter) => (
+              <button
                 key={filter}
                 className="filter-button"
                 onClick={() => console.log(`Filter by ${filter}`)}
@@ -68,19 +68,26 @@ function App() {
               </button>
             ))}
           </div>
-          
+
           {/* NFCI Data Table */}
-          <div style={{ marginTop: '40px', width: '100%', maxWidth: '1200px', margin: '40px auto 0' }}>
-            <NFCIDataTable 
+          <div
+            style={{
+              marginTop: "40px",
+              width: "100%",
+              maxWidth: "1200px",
+              margin: "40px auto 0",
+            }}
+          >
+            <NFCIDataTable
               dataUrl="/screenshotScripts/nfci_html_extracts/chart_4_highcharts-data-table-1.html"
               title="NFCI Data Table"
               containerProps={{
                 style: {
-                  width: '100%',
-                  margin: '0 auto',
-                  padding: '0 20px',
-                  boxSizing: 'border-box'
-                }
+                  width: "100%",
+                  margin: "0 auto",
+                  padding: "0 20px",
+                  boxSizing: "border-box",
+                },
               }}
             />
           </div>
@@ -90,17 +97,17 @@ function App() {
         <div className="card">
           <h3>NFCI Data Table</h3>
           <div className="card-content">
-            <div style={{ width: '100%' }}>
-              <NFCIDataTable 
+            <div style={{ width: "100%" }}>
+              <NFCIDataTable
                 dataUrl="/screenshotScripts/nfci_html_extracts/chart_4_highcharts-data-table-1.html"
                 title="NFCI Data Table"
                 containerProps={{
                   style: {
-                    width: '100%',
-                    margin: '0',
-                    padding: '0',
-                    boxSizing: 'border-box'
-                  }
+                    width: "100%",
+                    margin: "0",
+                    padding: "0",
+                    boxSizing: "border-box",
+                  },
                 }}
               />
             </div>
