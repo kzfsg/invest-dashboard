@@ -58,7 +58,7 @@ function App() {
         <div className="logo-container">
           <img src="/assets/Statsboard.png" alt="Logo" className="main-logo" />
           <div className="filter-buttons">
-            {['US', 'China', 'EU', 'EMs', 'Macro'].map((filter) => (
+            {['US', 'China', 'EU LOL', 'EMs LOL', 'Macro LOL'].map((filter) => (
               <button 
                 key={filter}
                 className="filter-button"
