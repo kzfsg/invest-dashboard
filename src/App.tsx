@@ -5,6 +5,7 @@ import Silk from "./components/background/Silk";
 import Aurora from "./components/background/Aurora";
 import AnimationOverlay from "./components/AnimationOverlay";
 import NFCIDataTable from "./components/charts/NFCIDataTable";
+import NFCIInteractiveSection from "./components/NFCIInteractiveSection.jsx";
 
 function App() {
   const [background, setBackground] = useState<"silk" | "aurora">("silk");
@@ -58,7 +59,7 @@ function App() {
         <div className="logo-container">
           <img src="/assets/Statsboard.png" alt="Logo" className="main-logo" />
           <div className="filter-buttons">
-            {["US", "China", "EU", "EMs", "Macro"].map((filter) => (
+            {["US", "China", "EU LOL", "EMs", "Macro"].map((filter) => (
               <button
                 key={filter}
                 className="filter-button"
@@ -113,28 +114,10 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="card">
-          <h3>Card 2</h3>
+        <div className="card large-card">
+          <h3>Interactive NFCI Data</h3>
           <div className="card-content">
-            <p>This is the second card with some content.</p>
-            <p>Additional content to demonstrate scrolling...</p>
-            <p>More content...</p>
-            <p>Even more content...</p>
-            <p>Keep going...</p>
-            <p>Almost there...</p>
-            <p>Final content item.</p>
-          </div>
-        </div>
-        <div className="card">
-          <h3>Card 3</h3>
-          <div className="card-content">
-            <p>This is the third card with some content.</p>
-            <p>Additional content to demonstrate scrolling...</p>
-            <p>More content...</p>
-            <p>Even more content...</p>
-            <p>Keep going...</p>
-            <p>Almost there...</p>
-            <p>Final content item.</p>
+            <NFCIInteractiveSection />
           </div>
         </div>
       </div>

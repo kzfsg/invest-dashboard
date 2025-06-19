@@ -154,8 +154,8 @@ html, body, #root {
 
 /* Cards Container */
 .cards-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 90%;
   margin: 0 auto 2rem;
   gap: 1.5rem;
@@ -163,7 +163,6 @@ html, body, #root {
 
 /* Individual Card */
 .card {
-  flex: 1;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -173,8 +172,14 @@ html, body, #root {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  max-height: 400px; /* Fixed height for the card */
-  overflow: hidden; /* Ensures the content doesn't overflow the card */
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.card.large-card {
+  grid-column: 1 / -1;
+  max-height: none;
+  min-height: 600px;
 }
 
 .card-content {
